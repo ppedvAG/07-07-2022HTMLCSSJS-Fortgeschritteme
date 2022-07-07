@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Validierung</title>
+    <script src="/scripts/validation.js" defer></script>
+</head>
+<body>
+    <!-- Das list-Attribut verlinkt unser input-Element mit der datalist, die automatische Ergänzungen vorschlägt -->
+    <input list="fruits" placeholder="Früchte" type="text" id="fruit-choice">
+    <datalist id="fruits">
+        <option value="Banane"></option>
+        <option value="Kirsche"></option>
+        <option value="Erdbeere"></option>
+        <option value="Apfel"></option>
+    </datalist>
+    <form>
+        <input type="text" required id="ice-cream" placeholder="Welche Eissorte magst du?">
+        <input type="password" required minlength="8" placeholder="password" id="password">
+        <input type="Submit" id="submit-button" value="Absenden">
+    </form>
+    <form>
+        <input type="text" id="zipCode" placeholder="PLZ">
+        <select id="country">
+            <option value="ch">Schweiz</option>
+            <option value="de">Deutschland</option>
+            <option value="fr">Frankreich</option>
+        </select>
+        <input type="submit" value="Absenden">
+    </form>
+</body>
+</html>
