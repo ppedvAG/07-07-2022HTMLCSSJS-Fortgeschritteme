@@ -227,3 +227,19 @@ p {
 /* 
     ! Nach Pause Übung
 */
+
+/* Media-Query Einstieg */
+/* Syntax: */
+/* @media <geräte-typ> and(beide Bedingungen müssen erfüllt sein) <Bedingung (z.B. min-width:) */
+/* @media <geräte-typ>, <Bedingung> */
+/* Geräte-Typen */
+/* all - Alle Geräte */
+/* print - Drucker */
+/* screen - jegliche Bildschirme */
+/* Weitere nützliche Bedingung: */
+/* orientation: */
+/* portrait : Hochformat */
+/* landscape : Querformat */
+
+/* Breakpoints: */
+/* Punkte an denen die Regeln geändert werden */
