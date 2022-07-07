@@ -1,0 +1,58 @@
+// Sass Files enden in .scss
+
+// Dateien können importiert werden
+@import "variables";
+
+
+body {
+    background-color: $bgColor;
+    color: $textColor;
+}
+
+:root {
+    font-size: $fontSize;
+}
+
+// Sass kennt scopes, also kann ich Variablen lokal definieren
+blockquote {
+    $textColor: rgb(59, 56, 56);
+    $bgColor: white;
+    background-color: $bgColor;
+    color: $textColor;
+}
+
+// Nesting wird vereinfacht, da wir die HTML-Struktur innerhalb der geschweiften Klammern nachbauen können
+li {
+    a {
+        display: block;
+        text-decoration: none;
+        color: $textColor;
+    }
+}
+
+// Mixins:
+// Erlauben das definierne von kleinen Teilregeln, die ich in anderen Regelen über @include einbinden kann
+@mixin highlight {
+    color: red;
+    font-size: 24px;
+}
+
+blockquote {
+    @include highlight;
+}
+
+// Extend:
+// Können eine Grundregel bauen und von dieser Regel erben und sie somit erweitern 
+.exampleClass {
+    border: 1px solid grey;
+    color: red;
+    cursor: pointer;
+}
+
+.exampleClass2 {
+    @extend .exampleClass;
+    height: 50px;
+    width: 100px;
+}
+
+// Erleichtert die Arbeit, da wir weniger Code mehrfach schreiben müssen

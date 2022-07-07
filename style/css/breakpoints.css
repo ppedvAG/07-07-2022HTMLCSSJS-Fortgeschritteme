@@ -31,4 +31,43 @@ Ohne Variablen und die media-Queries sind gerade in der falschen Reihenfolge
     img {
         display: none;
     }
+    :root {
+        --fontColor: black;
+    }
 }
+
+/* Alternative mit den Variablen: */
+
+@media screen and (max-width: 499px) {
+    :root {
+        /* Hier werden Variablen definiert */
+        --fontColor: red;
+        --fontSize: 20px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    :root {
+        --fontColor: yellow;
+        --fontSize: 25px
+    }
+}
+
+@media screen and (min-width: 750px) {
+    :root {
+        --fontColor: black;
+    }
+}
+
+:root {
+    font-size: var(--fontSize, 16px);
+}
+
+#first, #second, #third {
+    /* Hier wird die Variable eingesetzt */
+    color: var(--fontColor, black);
+    margin: 1.5rem;
+    /* Keine leertasten nach den Funktionen in CSS */
+
+}
+

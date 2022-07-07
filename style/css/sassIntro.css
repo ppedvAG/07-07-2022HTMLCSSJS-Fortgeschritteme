@@ -1,0 +1,35 @@
+body {
+  background-color: lightgrey;
+  color: black;
+}
+
+:root {
+  font-size: 20px;
+}
+
+blockquote {
+  background-color: white;
+  color: rgb(59, 56, 56);
+}
+
+li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+blockquote {
+  color: red;
+  font-size: 24px;
+}
+
+.exampleClass, .exampleClass2 {
+  border: 1px solid grey;
+  color: red;
+  cursor: pointer;
+}
+
+.exampleClass2 {
+  height: 50px;
+  width: 100px;
+}/*# sourceMappingURL=sassIntro.css.map */

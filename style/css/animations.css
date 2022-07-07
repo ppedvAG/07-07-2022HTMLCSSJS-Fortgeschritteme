@@ -1,0 +1,46 @@
+/* 
+    Animationen in CSS
+*/
+/* 
+    Funktionieren mit s.g. Keyframes
+    Syntax:
+    @keyframes identiferDesFrames {
+    from {CSS-Regel}
+    to {CSS-Regel}
+    }
+    @keyframes identiferDesFrames {
+    0% {CSS-Regel}
+    25% {CSS-Regel}
+    50% {CSS-Regel}
+    75% {CSS-Regel}
+    100% {CSS-Regel}
+    }
+
+    Einsetzen:
+
+    div {
+    animation-name: identifier;
+    animation-duration: zeitInSekunden;
+    }
+*/
+
+@keyframes colorShow {
+    0% {background-color: aqua;left:0;}
+    25% {background-color: green;}
+    50% {background-color: greenyellow;}
+    75% {background-color: yellow;}
+    100% {background-color: purple;left:250px;}
+}
+
+div#rainbow {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    animation-name: colorShow;
+    animation-duration: 5s;
+}
+/* animation-name: BEstimmt welche Animation gespielt wird */
+/* animation-fill-mode: bestimmt wie sich das Element nach der Animation verhält */
+/* animation-iteration-count: bestimmt wie oft die Animation gespielt wird, Zahl oder infinite für eine dauerhafte animation */
+/* animation-timing-function: Bestimmt wie die Geschwindigkeit der Animation sich verhält, Super Editor in den Dev-Tools des Browsers */

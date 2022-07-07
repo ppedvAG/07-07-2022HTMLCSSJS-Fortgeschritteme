@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+    <!-- https://www.w3schools.com/bootstrap5/index.php -->
+    <!-- Wenn ich eigenen Stylesheets zusätzlich verwenden will, sollten diese nach Bootstrap eingetragen werden, da sie sonst überschrieben werden -->
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="/style/css/sassIntro.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1>Was ist Bootstrap?</h1>
+        <p>CSS-Library, die vordefinierte Klassen enthält, die wir unseren Elementen zuweisen können.</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="container">
+            <h2>Was ist Sass?</h2>
+            <p>Syntactically Awesome Style Sheets</p>
+            <p>Bieten uns die Möglichkeit CSS Regeln komfortabler zu schreiben</p>
+            <p>Sass muss vorher installiert werden</p>
+            <code>npm install -g sass</code>
+            <p>Sass muss kompiliert werden, in VSCode ist dafür eine Extension nötig:
+            </p>
+            <blockquote>
+                Name: Live Sass Compiler
+                Id: glenn2223.live-sass
+                Description: Compile Sass or Scss to CSS at realtime.
+                Version: 5.4.0
+                Publisher: Glenn Marks
+            </blockquote>
+            <a href="https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass">VS Marketplace Link</a>
+            <div class="exampleClass">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam assumenda quos eius cupiditate ad nulla quis maiores, rem non culpa adipisci accusamus voluptates est dolores voluptas eum in ipsam earum. Assumenda animi maiores quisquam quibusdam id error cupiditate nulla tenetur obcaecati, deleniti dolor officia voluptatem facere repellendus non, iusto recusandae!</div>
+            <div class="exampleClass2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium exercitationem fugit neque cumque, error incidunt nostrum laboriosam nihil animi architecto fugiat assumenda vero optio ea enim voluptatum possimus magnam ducimus doloremque sequi sint doloribus temporibus. Magnam corporis quia dolor magni?</div>
+        </div>
+    </main>
+</body>
+
+</html>
