@@ -2,3 +2,29 @@
     display: flex;
     padding: 2rem;
 }
+
+.flex-textbox, .flex-textbox-2 {
+    width: 50%;
+    padding: 2rem;
+    text-align: justify;
+}
+
+.flex-img-container-2 {
+    width: 50%;
+}
+
+.flex-img-container-4 {
+    width: 25%;
+}
+
+img {
+    display: block;
+}
+
+/* Mit Flex können wir einfache responsive Layouts erstellen, da sich die items innerhalb des containers automatisch anordnen und über  */
+
+/* 
+    Guter Guide für Flex: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+    Guter Guide für Grid: https://css-tricks.com/snippets/css/complete-guide-grid/
+    Spielerisch Flexbox üben: https://flexboxfroggy.com/#de
+*/
