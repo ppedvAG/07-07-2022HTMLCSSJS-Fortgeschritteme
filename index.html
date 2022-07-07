@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HTML-Review & Emmet</title>
+    <!--
+    https://www.highervisibility.com/seo/tools/serp-snippet-optimizer/
+    Tool um Titel, URL und Description zu prüfen
+    -->
+    <!-- 
+        https://validator.w3.org/
+        Tool um die Validität meiner HTML-Seite zu testen
+        Weniger Errors => bessere SEO Ergebnisse
+    -->
+    <!-- 
+        HTML sollte so semantisch wie möglich sein
+        Title sinvoll und nicht zu lang, an SUchintention anpassen, jede Seite sollte einen individuellen Titel haben
+        Jede Seite sollte eine Description haben, nicht zu allgemein, Klein/Großschreibung beachten und maximal eine Description pro Seite
+        Meta-Tag Robots nur benutzen wenn nötig, also wenn wri einschränken wollen wie die Seite behandelt wird
+        Meta-Tag Viewport aufnehmen, da Google dann von einer mobile-optimierten Seite ausgeht
+        Meta-Tag Charset einbauen, von Google wird UTF-8 empfohlen
+        Meta-Tag Keyword, gar nicht mehr verwenden. Google ignoriert den Tag aufgrund von Missbrauch und Bing sieht es als Spam-Signal
+        HTML-Tags alle klein schreiben
+        Klassen und Id's semantisch behandeln, sollen erklären wofür der Tag gedacht ist und nicht sein aussehen beschreiben
+        Labels bei Input Elementen verwenden und die Id des zugehörigen Input feldes in das for-Attribut packen
+        Um Probleme bei der HTML-Struktur zu finden einfach die Dev-Tools des Browsers benutzen, die Probleme werden unter dem Reiter Elemente angezeigt, da fehlerhafte Elemente unterringelt werden 
+        ! Ist Browser abhängig
+    -->
+    <meta name="robots" content="index nofollow"> <!-- So ist die Standardeinstellung-->
+    <!-- bestimmt wie Crawler die Seite behandeln
+        Index: noindex - Bedeutet die Seite soll nicht in den Index aufgenommen werden | index - Seite soll aufgenommen werden
+        Follow: nofollow - Bedeutet wir bürgen nicht für die Sicherheit/Inhalt der verlinkten Seiten | follow Bedeutet links sollen ebenfalls gecrawlt werden
+    -->
+</head>
+<body>
+    <h1>Emmet</h1>
+    <section>
+        <article>
+            <h2>Was ist Emmet?</h2>
+            <p>Kurzform um HTML zu schreiben. Schneller und einfacher als alles selbst zu tippen. Früher bekannt als Zen-Coding. 
+            </p>
+            <h3>Wie funktioniert es?</h3>
+            <p>Ich schreibe den Elements-Namen und drücke tab.</p>
+            <p class="test">Stellt auch weitere Funktionalität bereit wie das einsetzen von Id's und Klassen.</p>
+            <h3>Emmet-Syntax</h3>
+            <ul>
+                <li>elementName + Tab => Erstellt öffnenden und (falls nötig) schließenden Tag</li>
+                <li>elementName.className + Tab => Erstellt Tag mit entsprechender Klasse</li>
+                <li id="important-Li">elementName#idName + Tab => Erstellt den Tag mit entsprechender Id</li>
+                <li>element1>element2 + Tab => Erstellt element2 als Child von element1</li>
+                <li>element1+element2 + Tab => Erstellt element1 und element2 als Siblings, also auf der selben Stufe</li>
+                <li>element1>element2^element3 + Tab => element 3 wird auf der selben Ebene wie element1 erstellt</li>
+                <li>element1*n + Tab => Erstellt element1 n-Mal</li>
+                <li>element1>(element2+element3)*4 + Tab => Würde viermal element2 benahcbart von element3 innerhalb von element1 erstellen</li>
+                <li>element1[attribut=wert] + Tab => Erstellt das Element mit dem entsprechenden Attribut</li>
+                <li>element1#$test + Tab => Stellt uns Nummerierung zur Verfügung, meistens in Kombi mit Multiplikator benutzt</li>
+                <li>element1#test$@n*3 + Tab => Erstellt element1 3 mal mit Nummerierung und n als Startzahl. Vor dem n kann noch ein Minus stehen, dann würde n die Endzahl sein. Steht das Minus alleine wird absteigend nummeriert</li>
+                <li>element1{text} + Tab => Erstellt element1 mit dem entsprechenden Text</li>
+                <li>Bei lorem kann ich direkt hinter lorem eine Zahl schreiben, also ohne das Mal-Zeichen, und dann werden mir entsprechend viele Wörter generiert</li>
+            </ul>
+        </article>
+        <article>
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est a exercitationem, illo assumenda reiciendis doloremque ducimus nostrum quaerat voluptate veniam voluptas repellendus illum commodi veritatis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit omnis illo nihil odit itaque quidem ducimus vitae possimus, dolorum perspiciatis molestiae esse iste laborum temporibus sit. Veniam asperiores optio laboriosam?</p>
+            <ol>
+                <li class="test2"></li>
+                <li class="test2"></li>
+                <li class="test2"></li>
+                <li class="test2"></li>
+                <li class="test2"></li>
+            </ol>
+            <p></p>
+        </article>
+        <article>
+            <h2>Article & Section</h2>
+            <p>Können beliebig getauscht werden. Stehen beide für eigenständige Teile der Seite, die Informationen übermitteln.
+                Sollten im Idealfall ein eigenes Heading haben. Können ineinander verschachtelt werden.
+                Sind etwas besser für SEO als eine div, da sie ihre Funktion im Namen mitübermitteln. Die div hingegen gilt als leerer Tag.
+                Gelten als inklusiver, da sie Screenreadern ihre Arbeite erleichtern.
+            </p>
+            <h2>Header & Footer</h2>
+            <p>Können entweder als Kopf- und Fußzeile unsere gesamten Seite dienen, oder in Article und Section verwendet werden um zusätzliche Infos zu liefern.</p>
+            <h2>Nav</h2>
+            <p>Ist für die Navigationsleiste gedacht. Sollte nur die Navigationsleiste enthalten.</p>
+            <h2>Aside Tag</h2>
+            <p>Ist für interessante Infos innerhalb eines Textes gedacht, oder Bilder und weiterführende Infos.</p>
+        </article>
+        <article>
+            <h2>Der picture-Tag</h2>
+            <p>Der picture-Tag bietet uns eine alternative zum img-Tag. Der Tag ist responsive. Der Tag enhält mindestens einen source-Tag und genau einmal den img-Tag. Beim source-Tag gibt es noch das media-Attribut mit dem wir abfragen können wie groß der Bildschirm ist. Der img-Tag wird als Fallback benutzt, falls keiner der source-Tags passt oder der Browser den picture-Tag nicht unterstützt.</p>
+            <picture>
+                <source media="(min-width: 1080px)" srcset="https://via.placeholder.com/550x250">
+                <source media="(min-width: 750px)" srcset="https://via.placeholder.com/325x125">
+                <source media="(min-width: 500px)" srcset="https://via.placeholder.com/225x75">
+                <img src="https://via.placeholder.com/150x50" alt="Platzhalter">
+            </picture>
+        </article>
+        <article>
+            <h2>Der map-Tag</h2>
+            <p>Der map-Tag bietet uns die Möglichkeit ein Bild in mehrere Bereiche einzuteilen und diese Bereiche zu verschiedenen Links zu leiten.
+            Dabei müssen wir aufpassebn, dass wir die richtigen attribute verwenden, da das Bild selber auch noch das Attribut usemap="#nameDerMap" entahlten muss. Der map-Tag enthält mehrere area-Tags. Diese haben folgende Attribute: 
+            </p>
+            <ul>
+                <li>shape-Attribut, kann folgende Werte haben:
+                    <ul>
+                        <li>rect, Viereckiger Bereich</li>
+                        <li>circle, Runder Bereich</li>
+                        <li>polygon, Vieleck</li>
+                        <li>default, => selbe wie rect</li>
+                    </ul>
+                </li>
+                <li>coords, verhalten sich je nach shape unterschiedlich:
+                    <ul>
+                        <li>Rect: coords="x1, y1(obere linke Eck),x2,y2(rechte untere Eck)"</li>
+                        <li>Circle: coords="x1,y1(Mittelpunkt des Kreises),r(Radius)"</li>
+                        <li>Polygon: coords="x1,y1(erstes Ecke), x2,y2(zweites Eck)...."</li>
+                    </ul>
+                </li>
+                <li>href, Link wo bei klick hingeführt wird</li>
+                <li>alt, Text der angezeigt wird wenn ich über dem Bereich hovere</li>
+            </ul>
+            <img src="https://via.placeholder.com/250x250" usemap="#exMap">
+        </article>
+        <map name="exMap">
+            <area shape="rect" href="https://ppedv.de" coords="0,0,125,125" alt="Ppedv">
+            <area shape="rect" href="https://wikipedia.de" coords="125,125,250,250" alt="Wikipedia">
+        </map>
+    </section>
+</body>
+</html>
