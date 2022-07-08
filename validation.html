@@ -29,5 +29,17 @@
         </select>
         <input type="submit" value="Absenden">
     </form>
+    <form>
+        <!-- autocomplete-Attribut bei password -->
+        <!-- Haben drei gültige Werte: -->
+        <!-- 
+            "current-password" - Browser wird, falls ein Passwort gespeichert ist, vorschlagen dieses einzufügen
+            "old-password" - Browser wird bis jetzt gespeichertes Passwort einfügen
+            "new-password" - Browser wird fragen ob er dieses Passwort in Zukunft speichern soll
+        -->
+        <input type="password" name="password" id="passwordEx" minlength="8" placeholder="Passwort">
+        <input type="password" name="confirmation" id="confirmation" placeholder="Passwort bestätigen">
+        <input type="submit" value="Anmelden" id="pwSubmit" class="button submit form stuff">
+    </form>
 </body>
 </html>
