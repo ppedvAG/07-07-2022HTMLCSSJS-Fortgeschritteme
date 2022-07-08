@@ -85,3 +85,5 @@ console.log(sessionStorage["schlüssel"]); // Funktioniert identisch
 // .key(index) => Gibt den Namen des Schlüssels an dem Index zurück
 // .clear() => leert den Storage
 // .removeItem(schlüssel) => löscht den Schlüssel und dessen Wert
+
+// sind cookies nuir domainspezifisch
