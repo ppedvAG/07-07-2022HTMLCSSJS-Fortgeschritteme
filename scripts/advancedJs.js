@@ -76,6 +76,7 @@ class Student extends Person {
     // introduceSelf(test) {
     //     console.log(`My name is ${this.firstName} and I'm in class ${this.schoolClass} ${test}`);
     // }
+    // Trick zur Überladung: https://www.geeksforgeeks.org/function-overloading-in-javascript/
 }
 
 const p2 = new Student("Erika", "Musterfrau", 17 , "female", 11);
