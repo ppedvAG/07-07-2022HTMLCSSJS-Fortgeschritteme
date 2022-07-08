@@ -5,6 +5,11 @@ function locate() {
     const output = document.querySelector("#output");
     const position = document.querySelector("#position");
 
+    /* navigator.geolocation.getCurrentPosition(
+        callbackFallsErlaubt,
+        callbackFallsFehler? optional
+    )
+*/
     // Gibt uns einen einmaligen standort zurück
     navigator.geolocation.getCurrentPosition(
         (location) => {
